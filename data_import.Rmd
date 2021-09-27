@@ -3,9 +3,16 @@ title: "Data Import"
 output: github_document
 ---
 
-```{r}
+```{r setup}
 library(tidyverse)
 ```
 
 ## Read in some data
+
+Read in the litters dataset.
+
+```{r}
+litters_df = read_csv("./data/FAS_litters.csv")
+```
+
 
