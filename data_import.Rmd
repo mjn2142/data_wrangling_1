@@ -70,3 +70,21 @@ filter(litters_df, gd0_weight >=20, gd_of_birth == 20)
 filter(litters_df, group %in% c("Con7", "Mod8"))
 ```
 
+## 'mutate'
+
+```{r}
+mutate(
+  litters_df,
+  wt_gain = gd18_weight - gd0_weight,
+  group = str_to_lower(group))
+```
+
+## 'arrange'
+
+```{r}
+arrange(litters_df, pups_born_alive)
+```
+
+
+
+
