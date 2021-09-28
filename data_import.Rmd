@@ -1,5 +1,5 @@
 ---
-title: "Data Import"
+title: "Data Manipulation"
 output: github_document
 ---
 
@@ -7,31 +7,10 @@ output: github_document
 library(tidyverse)
 ```
 
-## Read in some data
-
-Read in the litters dataset.
+##Load in the FAS Litters Package
 
 ```{r}
 litters_df = read_csv("./data/FAS_litters.csv")
 litters_df = janitor::clean_names(litters_df)
-spec(litters_df)
 ```
-
-##Take a look at the data
-```{r}
-litters_df
-```
-
-```{r}
-head(litters_df)
-```
-
-```{r}
-tail(litters_df)
-```
-
-```{r}
-skimr::skim(litters_df)
-```
-
 
